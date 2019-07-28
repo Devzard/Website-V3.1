@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact Info</title>
+  <link rel="icon" href="../images/favicon.png" type="image/gif" />
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    #feedback {
+      font-size: 2rem;
+      height: 7vh;
+      width: 50vw;
+    }
+
+    #name {
+      font-size: 2rem;
+      height: 5vh;
+      width: 50vw;
+    }
+
+    #contact1 {
+      font-size: 2rem;
+      height: 3vh;
+      width: 50vw;
+    }
+
+    #submit {
+      font-size: 1.5rem;
+      background: black;
+      color: white;
+      border-radius: 10px;
+    }
+
+    #submit:hover {
+      background: white;
+      color: black;
+    }
+
+    @media screen and (min-width: 1000px) {
+      a {
+        font-size: 2vw;
+      }
+
+      .title {
+        padding: 15px;
+        font-size: 3vw;
+      }
+
+      #feedback {
+        height: 30vh;
+        width: 50vh;
+        font-size: 20px;
+      }
+
+      #name {
+        font-size: 20px;
+        height: 7vh;
+        width: 50vh;
+      }
+
+      #contact1 {
+        font-size: 20px;
+        height: 7vh;
+        width: 50vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <div class="title">
+      <h1>CONTACT</h1>
+    </div>
+    <div class="buttons">
+      <button class="button" id="home"><a href="../index.html">HOME</a></button>
+      <button class="button" id="selected"><a href="./Contact/contact.html">CONTACT</a></button>
+      <button class="button" id="game-1"><a href="../Game-1/game1.html">GAME 1</a></button>
+      <button class="button" id="game-2"><a href="../Game-2/game2.html">GAME 2</a></button>
+      <button class="button" id="game-2"><a href="../Game-3/game3.html">GAME 3</a></button>
+    </div>
+  </div>
+  <div class="content">
+    <br />
+    <h2 id="top"><u>Contact info</u></h2>
+    <br />
+
+    <h3>
+      Hi! I'm Debashish,<br />
+      a Computer Science Engineering<br />
+      student in Jorhat Engineering College.<br />
+      Feel free to drop any feedback. <br />
+      Click down below to visit my <br />
+      Instagram and Facebook.
+    </h3>
+    <br />
+    <a href="https://www.instagram.com/debashish_gogoi_?igshid=1hr9wjww5zpbu"><img src="../images/insta.png" /></a>
+    &nbsp
+    <a href="https://m.facebook.com/profile.php?id=100004387247103"><img src="../images/fb.png" /></a>
+    <br /><br />
+
+    <div class="form">
+      <form id="form" netlify>
+        Full Name:
+        <br />
+        <input type="text" name="Full name" value="" id="name" /><br />
+        <br />
+        Enter Your Feedback or Message:<br />
+        <!--  <input type="text" name="feedback" value="" id="feedback"> -->
+        <textarea rows="10" cols="50" name="feedback" form="form" id="feedback">
+          </textarea>
+        <br /><br />
+        Your contact info(optional):
+        <br />
+        <input type="text" id="contact1" name="contact" value="" />
+        <br /><br />
+        <input type="submit" id="submit" name="submit" class="button" />
+      </form>
+      <br /><br />
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ball Rain</title>
+    <link rel="icon" href="../images/favicon.png" type="image/gif">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #bug {
+            color: #e63727;
+        }
+
+        #score {
+            font-size: 3rem;
+            color: #02ff5a;
+        }
+
+        .btn {
+            background: none;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 2.5rem;
+            padding: 2vw;
+            border-radius: 20px;
+            color: rgb(75, 233, 245);
+            border: none;
+        }
+
+        #canvas {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        #status {
+            font-size: 2.5rem;
+            color: yellow;
+        }
+
+        .instruction {
+            color: white;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="title">
+            <h1>Ball Rain</h1>
+        </div>
+        <div class="buttons">
+            <button class="button" id="home"><a href="../index.html">HOME</a></button>
+            <button class="button" id="contact"><a href="../Contact/contact.html">CONTACT</a></button>
+            <button class="button" id="game-1"><a href="../Game-1/game1.html">GAME 1</a></button>
+            <button class="button" id="selected"><a href="./Game-2/game2.html">GAME 2</a></button>
+            <button class="button" id="game-2"><a href="../Game-3/game3.html">GAME 3</a></button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="statusBar">
+            <div class="score">
+                <br>
+                <p class="instruction">Hit the balls to score.
+                    <br>
+                    Complete the game if you can!
+                    Game ends if a ball crosses the bottom line.
+                </p>
+                <p id="score">Score : 0</p>
+
+            </div>
+            <div class="controls">
+                <button class="btn" id="button" onclick="startGame()">Start Game</button>
+                <br>
+                <p id="status"></p>
+                <br>
+            </div>
+        </div>
+        <div class="container">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="footer">
+            <br>
+            For any bug report, <a href="../Contact/contact.html" id="bug"><u><b>Click here!</b></u></a>
+            <br>
+            <br>
+        </div>
+
+        <script src="./ballRain.js"></script>
+    </div>
+</body>
+
+</html>

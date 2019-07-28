@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Character predictor!</title>
+    <link rel="icon" href="../images/favicon.png" type="image/gif">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .name {
+            font-size: 5vw;
+        }
+
+        .box {
+            height: 5vh;
+            width: 35vw;
+            border-radius: 20px;
+            font-size: 2rem;
+            background: rgb(13, 195, 219, 0.2);
+        }
+
+        .btn {
+            border-radius: 20px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: 20vw;
+            height: 6vh;
+            font-size: 2.5rem;
+            margin: 20px;
+        }
+
+        #title {
+            color: #42FFF6;
+            text-shadow: 0px 5px 10px black;
+            font-size: 4rem;
+        }
+
+        #ans {
+            color: #FF0544;
+        }
+
+        @media screen and (min-width:1000px) {
+
+            .box {
+                font-size: 2rem;
+                width: 20vw;
+                height: 9vh;
+                background-color: rgb(13, 195, 219, 0.3);
+                ;
+                border: none;
+                color: black;
+                border-radius: 20px;
+            }
+
+            .title-1 {
+                font-size: 2rem;
+            }
+
+            .btn {
+                border-radius: 20px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 20vw;
+                height: 10vh;
+                font-size: 2.5rem;
+                margin: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="title">
+            <h1>CHARACTER PREDICTOR</h1>
+        </div>
+        <div class="buttons">
+            <button class="button" id="home"><a href="../index.html">HOME</a></button>
+            <button class="button" id="contact"><a href="../Contact/contact.html">CONTACT</a></button>
+            <button class="button" id="selected"><a href="./Game-1/game1.html">GAME 1</a></button>
+            <button class="button" id="game-2"><a href="../Game-2/game2.html">GAME 2</a></button>
+            <button class="button" id="game-2"><a href="../Game-3/game3.html">GAME 3</a></button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title-1">
+            <br>
+            <h2>Type in your Name and I'll tell something about you</h2>
+            <br>
+        </div>
+        <div class="name">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="" class="box"><br><br>
+            <button class="button btn" id="button" onclick="predict()">Predict</button>
+            <button class="button btn" id="clear" onclick="clr()">Clear</button>
+        </div>
+        <div class="prediction">
+            <h1 class="title-ans" id="title"> </h1>
+            <h3 id="ans"> </h3>
+            <br><br>
+        </div>
+    </div>
+
+
+    <script src="./cp.js"></script>
+
+</body>
+
+</html>
